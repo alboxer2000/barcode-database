@@ -8,7 +8,7 @@
     "warning": 1,
     "food": false,
     "nutrients": null,
-    "image-url": null,
+    "image-url": "https://barcode-database.vercel.app/img/1.png",
     "type": "ean13"
     "item-number": "6301712"
   },
@@ -50,5 +50,18 @@
     "image-url": null,
     "type": "ean13"
     "item-number": "PF102001"
+  },
+  {
+    "name": "Kirby and the Forgotten Land",
+    "barcode": 045496429300,
+    "brand": "Nintendo",
+    "cobrand": null,
+    "description": null,
+    "warning": 1,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13"
+    "item-number": null
   }
 ]
