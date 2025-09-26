@@ -1,8 +1,9 @@
 [
   {
-    "name": "LEGO Mini Robots"
-    "barcode": 5702016720105
-    "brand": "LEGO"
-    "description": null
+    "name": "LEGO Mini Robots",
+    "barcode": 5702016720105,
+    "brand": "LEGO",
+    "description": null,
+    "image-url": null
   }
 ]
