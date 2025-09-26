@@ -5,6 +5,9 @@
     "brand": "LEGO",
     "cobrand": null,
     "description": null,
+    "warning": 1,
+    "food": false,
+    "nutritional-table": null,
     "image-url": null
   },
   {
@@ -13,6 +16,20 @@
     "brand": "Franco Cosimo Panini",
     "cobrand": "Mojang AB",
     "description": null,
+    "warning": 1,
+    "food": false,
+    "nutritional-table": null,
+    "image-url": null
+  },
+  {
+    "name": "Lunch Box",
+    "barcode": 4251906509883,
+    "brand": "Conad",
+    "cobrand": "Mojang AB",
+    "description": null,
+    "warning": 1,
+    "food": false,
+    "nutritional-table": null,
     "image-url": null
   }
 ]
