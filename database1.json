@@ -7,7 +7,7 @@
     "description": null,
     "warning": 1,
     "food": false,
-    "nutritional-table": null,
+    "nutrients": null,
     "image-url": null,
     "type": "ean13"
     "item-number": "6301712"
@@ -20,7 +20,7 @@
     "description": null,
     "warning": 0,
     "food": false,
-    "nutritional-table": null,
+    "nutrients": null,
     "image-url": null,
     "type": "ean13"
     "item-number": "72484PR"
@@ -33,7 +33,7 @@
     "description": null,
     "warning": 0,
     "food": false,
-    "nutritional-table": null,
+    "nutrients": null,
     "image-url": null,
     "type": "ean13"
     "item-number": "LMI-E01-BK108"
