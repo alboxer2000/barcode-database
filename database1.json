@@ -16,7 +16,7 @@
     "brand": "Franco Cosimo Panini",
     "cobrand": "Mojang AB",
     "description": null,
-    "warning": 1,
+    "warning": 0,
     "food": false,
     "nutritional-table": null,
     "image-url": null
@@ -27,7 +27,7 @@
     "brand": "Conad",
     "cobrand": "Mojang AB",
     "description": null,
-    "warning": 1,
+    "warning": 0,
     "food": false,
     "nutritional-table": null,
     "image-url": null
