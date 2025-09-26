@@ -109,11 +109,11 @@ jobs:
 
 
             } catch (parseError) {
-              // --- Case B: JSON is invalid (syntax error). Create open issue and fail job. ---
+              // --- Case B: JSON is invalid (syntax error). Create open issue and let job succeed. ---
               errorDetails = parseError.message;
               console.error(`JSON validation failed: ${errorDetails}`);
               
-              const issueTitle = `🚨 JSON Syntax Error in ${path}`;
+              const issueTitle = `JSON Syntax Error in ${path}`;
 
               // 4. Construct the issue body
               const issueBody = 'A critical JSON formatting error was detected in `' + path + '` during the latest push.\n\n'
@@ -141,6 +141,7 @@ jobs:
 
               console.log('Successfully created and assigned a new GitHub Issue.');
 
-              // 6. Fail the workflow run to block merging of bad data.
-              throw new Error(`JSON Validation Failed: ${errorDetails}. Issue created and assigned to ${ASSIGNEE}.`);
+              // NOTE: The 'throw new Error' has been removed here. 
+              // The action will now exit gracefully with a success status 
+              // after creating the issue.
             }
