@@ -44,13 +44,13 @@ jobs:
               parsedContent = JSON.parse(content);
               console.log(`Successfully parsed JSON in ${path}`);
 
-              // --- Case A: JSON is valid. Reformat and commit if needed. ---
+              // --- Case A: JSON is valid. Reformat, commit, create/close issue if needed. ---
               // Use 2 spaces for consistent formatting and ensure a trailing newline
               const nicelyFormattedContent = JSON.stringify(parsedContent, null, 2) + '\n';
               
               // Only proceed if the formatting actually changed.
               if (content !== nicelyFormattedContent) {
-                  console.log('JSON requires reformatting. Committing fix.');
+                  console.log('JSON requires reformatting. Committing fix and creating resolution issue.');
                   
                   // Get the current file's SHA to update it
                   const fileData = await github.rest.repos.getContent({
@@ -61,7 +61,7 @@ jobs:
                   });
                   const sha = fileData.data.sha;
                   
-                  // Update the file content
+                  // 1. Update the file content (Commit the fix)
                   await github.rest.repos.createOrUpdateFileContents({
                       owner: context.repo.owner,
                       repo: context.repo.repo,
@@ -79,21 +79,46 @@ jobs:
                       },
                   });
                   console.log(`Successfully committed reformatted ${path}`);
+
+                  // 2. Create the resolution issue
+                  const resolvedTitle = `✅ JSON Formatting Auto-Fixed in ${path}`;
+                  const resolvedBody = `The file \`${path}\` was pushed with inconsistent formatting (e.g., incorrect indentation or extra whitespace). \n\nThe GitHub Action automatically corrected the formatting using 2-space indentation and committed the fix back to the branch. This issue is being closed automatically.`;
+
+                  const newIssue = await github.rest.issues.create({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      title: resolvedTitle,
+                      body: resolvedBody,
+                      labels: ['auto-fix', 'resolved'],
+                      assignees: [ASSIGNEE]
+                  });
+                  
+                  // 3. Close the issue immediately
+                  await github.rest.issues.update({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      issue_number: newIssue.data.number,
+                      state: 'closed',
+                      state_reason: 'completed'
+                  });
+                  console.log(`Successfully created and closed issue #${newIssue.data.number} documenting the format fix.`);
+
               } else {
-                  console.log('JSON is already nicely formatted. No commit needed.');
+                  console.log('JSON is already nicely formatted. No commit or issue needed.');
               }
 
 
             } catch (parseError) {
-              // --- Case B: JSON is invalid (syntax error). Create issue and assign. ---
+              // --- Case B: JSON is invalid (syntax error). Create open issue and fail job. ---
               errorDetails = parseError.message;
               console.error(`JSON validation failed: ${errorDetails}`);
-
-              const issueTitle = `JSON Syntax Error in ${path}`;
+              
+              const issueTitle = `🚨 JSON Syntax Error in ${path}`;
 
               // 4. Construct the issue body
               const issueBody = 'A critical JSON formatting error was detected in `' + path + '` during the latest push.\n\n'
                 + '**Problem:** **' + errorDetails + '**\n\n'
+                + 'The Action cannot automatically repair critical syntax errors (like missing commas or brackets). Please fix the file.\n\n'
                 + '---\n'
                 + '### File Content:\n'
                 + 'The malformed JSON content that triggered the failure is below:\n'
@@ -104,7 +129,7 @@ jobs:
                 + '### Mistake Details:\n'
                 + errorDetails;
 
-              // 5. Create the GitHub Issue and assign
+              // 5. Create the GitHub Issue and assign (Issue remains open)
               await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -115,4 +140,7 @@ jobs:
               });
 
               console.log('Successfully created and assigned a new GitHub Issue.');
+
+              // 6. Fail the workflow run to block merging of bad data.
+              throw new Error(`JSON Validation Failed: ${errorDetails}. Issue created and assigned to ${ASSIGNEE}.`);
             }
