@@ -10,6 +10,9 @@ on:
 jobs:
   validate_json:
     runs-on: ubuntu-latest
+    # FIX: Add permissions block to grant write access to issues
+    permissions:
+      issues: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
