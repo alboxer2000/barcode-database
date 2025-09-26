@@ -1,0 +1,74 @@
+name: Validate database1.json and Create Issue on Error
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'database1.json' # Only run when database1.json changes
+
+jobs:
+  validate_json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate JSON and Create Issue on Failure
+        uses: actions/github-script@v7
+        with:
+          # This token is required to create a GitHub Issue
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = 'database1.json';
+            let content;
+            let errorDetails = '';
+
+            // 1. Read the file content
+            try {
+              content = fs.readFileSync(path, 'utf8');
+            } catch (readError) {
+              console.log(`Could not read file ${path}. Skipping validation.`);
+              // If the file doesn't exist, we exit gracefully.
+              return;
+            }
+
+            // 2. Attempt to parse the JSON content
+            try {
+              JSON.parse(content);
+              console.log(`Successfully validated JSON in ${path}`);
+            } catch (parseError) {
+              // 3. Handle JSON parsing failure
+              errorDetails = parseError.message;
+              console.error(`JSON validation failed: ${errorDetails}`);
+
+              const issueTitle = `JSON Validation Failed`;
+
+              // 4. Construct the issue body using concatenation to avoid YAML alias confusion
+              const issueBody = 'A critical JSON formatting error was detected in `' + path + '` during the latest push.\n\n'
+                + '**Problem:** **' + errorDetails + '**\n\n'
+                + '---\n'
+                + '### File Content:\n'
+                + 'The malformed JSON content that triggered the failure is below:\n'
+                + '```json\n'
+                + content + '\n'
+                + '```\n\n'
+                + '---\n'
+                + '### Mistake Details:\n'
+                + errorDetails;
+
+              // 5. Create the GitHub Issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: issueBody,
+                labels: ['bug', 'json-error'] // Add relevant labels
+              });
+
+              console.log('Successfully created a new GitHub Issue.');
+
+              // Optionally, fail the workflow run so the branch cannot be merged
+              // throw new Error(issueTitle);
+            }
