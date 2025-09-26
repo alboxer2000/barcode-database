@@ -60,7 +60,7 @@
     "warning": 1,
     "food": false,
     "nutrients": null,
-    "image-url": null,
+    "image-url": "https://barcode-database.vercel.app/img/2.jpg",
     "type": "ean13"
     "item-number": null
   }
