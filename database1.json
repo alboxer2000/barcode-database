@@ -8,7 +8,9 @@
     "warning": 1,
     "food": false,
     "nutritional-table": null,
-    "image-url": null
+    "image-url": null,
+    "type": "ean13"
+    "item-number": "6301712"
   },
   {
     "name": "Diario Minecraft 2025-2026",
@@ -19,7 +21,9 @@
     "warning": 0,
     "food": false,
     "nutritional-table": null,
-    "image-url": null
+    "image-url": null,
+    "type": "ean13"
+    "item-number": "72484PR"
   },
   {
     "name": "Lunch Box",
@@ -30,6 +34,8 @@
     "warning": 0,
     "food": false,
     "nutritional-table": null,
-    "image-url": null
+    "image-url": null,
+    "type": "ean13"
+    "item-number": "LMI-E01-BK108"
   }
 ]
