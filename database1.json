@@ -3,6 +3,15 @@
     "name": "LEGO Mini Robots",
     "barcode": 5702016720105,
     "brand": "LEGO",
+    "cobrand": null,
+    "description": null,
+    "image-url": null
+  },
+  {
+    "name": "Diario Minecraft 2025-2026",
+    "barcode": 8058263229005,
+    "brand": "Franco Cosimo Panini",
+    "cobrand": "Mojang AB",
     "description": null,
     "image-url": null
   }
