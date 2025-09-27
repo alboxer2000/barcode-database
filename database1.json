@@ -497,5 +497,21 @@
     "alsomadeof": "paper",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "Kidy Learn Concentration 20cm Incassable",
+    "barcode": "3154142779007",
+    "brand": "Maped",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": "6301712",
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
   }
 ]
