@@ -1,7 +1,7 @@
 [
   {
     "name": "LEGO Mini Robots",
-    "barcode": 5702016720105,
+    "barcode": "5702016720105",
     "brand": "LEGO",
     "cobrand": null,
     "description": null,
@@ -18,7 +18,7 @@
   },
   {
     "name": "Diario Minecraft 2025-2026",
-    "barcode": 8058263229005,
+    "barcode": "8058263229005",
     "brand": "Franco Cosimo Panini",
     "cobrand": "Mojang AB",
     "description": null,
@@ -35,7 +35,7 @@
   },
   {
     "name": "Lunch Box",
-    "barcode": 4251906509883,
+    "barcode": "4251906509883",
     "brand": "Conad",
     "cobrand": "Mojang AB",
     "description": null,
@@ -51,7 +51,7 @@
   },
   {
     "name": "Stapler",
-    "barcode": 8716052217700,
+    "barcode": "8716052217700",
     "brand": "Paper Fuel",
     "cobrand": null,
     "description": null,
@@ -67,7 +67,7 @@
   },
   {
     "name": "Kirby™ and the Forgotten Land",
-    "barcode": 045496429300,
+    "barcode": "045496429300",
     "brand": "HAL Laboratory",
     "cobrand": "Nintendo",
     "description": "Age Rating: 7 (PEGI)",
@@ -83,7 +83,7 @@
   },
   {
     "name": "Buono Minecraft 2025",
-    "barcode": 7756972657317,
+    "barcode": "7756972657317",
     "brand": "Conad",
     "cobrand": null,
     "description": null,
@@ -99,7 +99,7 @@
   },
   {
     "name": "KID G JACKET FIX HOOD"
-    "barcode": 8050243208550,
+    "barcode": "8050243208550",
     "brand": "CMP"
     "cobrand": null,
     "description": null,
@@ -115,7 +115,7 @@
   },
   {
     "name": "TEEN ORIGINAL TRICLIMAT"
-    "barcode": 0197804681396,
+    "barcode": "0197804681396",
     "brand": "The North Face",
     "cobrand": null,
     "description": null,
@@ -131,7 +131,7 @@
   },
   {
     "name": "M TRIN FULL ZIP HOODED TNF"
-    "barcode": 0197805780432,
+    "barcode": "0197805780432",
     "brand": "The North Face",
     "cobrand": null,
     "description": null,
