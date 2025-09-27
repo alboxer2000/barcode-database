@@ -384,5 +384,37 @@
     "madeof": "plastic",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "Super Mario Bros.™ Wonder",
+    "barcode": "045496479817",
+    "brand": "Nintendo",
+    "cobrand": null,
+    "description": "Age Rating: 7 (PEGI)",
+    "warning": 1,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
+  },
+  {
+    "name": "Pokémon™ Sword",
+    "barcode": "045496424787",
+    "brand": "Nintendo",
+    "cobrand": null,
+    "description": "Age Rating: 7 (PEGI)",
+    "warning": 1,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
   }
 ]
