@@ -240,5 +240,21 @@
     "madeof": "paper",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "Super Mario Maker for Nintendo 3DS",
+    "barcode": "045496474256",
+    "brand": "Nintendo",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
   }
 ]
