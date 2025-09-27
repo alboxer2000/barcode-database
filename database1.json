@@ -429,7 +429,7 @@
     "image-url": null,
     "type": "ean13",
     "item-number": "301088",
-    "madeof": "plastic",
+    "madeof": "metal",
     "clothing": false,
     "size": null
   },
@@ -445,8 +445,24 @@
     "image-url": null,
     "type": "ean13",
     "item-number": "GC1906CA",
-    "madeof": "plastic",
+    "madeof": null,
     "clothing": true,
     "size": "UK: 7; Europe: 37"
+  },
+  {
+    "name": "Country Rip V",
+    "barcode": "4033917212064",
+    "brand": "Nintendo",
+    "cobrand": null,
+    "description": null,
+    "warning": 1,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": "668544,
+    "madeof": null,
+    "clothing": true,
+    "size": "UK: 11; F: 46; US: 11 1/2; J: 295"
   }
 ]
