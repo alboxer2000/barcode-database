@@ -422,8 +422,8 @@
     "barcode": "8051511990887",
     "brand": "PICA",
     "cobrand": null,
-    "description": "Age Rating: 7 (PEGI)",
-    "warning": 1,
+    "description": null,
+    "warning": 0,
     "food": false,
     "nutrients": null,
     "image-url": null,
@@ -432,5 +432,21 @@
     "madeof": "plastic",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "1906R",
+    "barcode": "197967867194",
+    "brand": "New Balance",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": "GC1906CA",
+    "madeof": "plastic",
+    "clothing": true,
+    "size": "UK: 7; Europe: 37"
   }
 ]
