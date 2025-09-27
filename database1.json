@@ -98,5 +98,19 @@
     "type": "ean13",
     "item-number": null,
     "madeof": null
+  },
+  {
+    "name": "TEEN ORIGINAL TRICLIMAT"
+    "barcode": 0197804681396,
+    "brand": "The North Face",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": "NF0A89Y5EF11",
+    "madeof": null
   }
 ]
