@@ -256,5 +256,21 @@
     "madeof": "plastic",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "Kirby™ Star Allies",
+    "barcode": "045496421649",
+    "brand": "HAL Laboratory",
+    "cobrand": "Nintendo",
+    "description": "Age Rating: 7 (PEGI)",
+    "warning": 1,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
   }
 ]
