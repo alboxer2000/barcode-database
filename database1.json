@@ -9,8 +9,10 @@
     "food": false,
     "nutrients": null,
     "image-url": "https://barcode-database.vercel.app/img/1.png",
-    "type": "ean13"
-    "item-number": "6301712"
+    "type": "ean13",
+    "item-number": "6301712",
+    "madeof": "plastic",
+    "alsomadeof": "paper"
   },
   {
     "name": "Diario Minecraft 2025-2026",
@@ -22,8 +24,10 @@
     "food": false,
     "nutrients": null,
     "image-url": null,
-    "type": "ean13"
-    "item-number": "72484PR"
+    "type": "ean13",
+    "item-number": "72484PR",
+    "madeof": "paper",
+    "alsomadeof": "plastic"
   },
   {
     "name": "Lunch Box",
@@ -35,8 +39,9 @@
     "food": false,
     "nutrients": null,
     "image-url": null,
-    "type": "ean13"
-    "item-number": "LMI-E01-BK108"
+    "type": "ean13",
+    "item-number": "LMI-E01-BK108",
+    "madeof": "plastic"
   },
   {
     "name": "Stapler",
@@ -48,8 +53,9 @@
     "food": false,
     "nutrients": null,
     "image-url": null,
-    "type": "ean13"
-    "item-number": "PF102001"
+    "type": "ean13",
+    "item-number": "PF102001",
+    "madeof": "plastic"
   },
   {
     "name": "Kirby™ and the Forgotten Land",
@@ -61,7 +67,22 @@
     "food": false,
     "nutrients": null,
     "image-url": "https://barcode-database.vercel.app/img/2.jpg",
-    "type": "ean13"
-    "item-number": null
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic"
+  },
+  {
+    "name": "Buono Minecraft 2025",
+    "barcode": 7756972657317,
+    "brand": "Conad",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "image-url": "https://barcode-database.vercel.app/img/2.jpg",
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "paper"
   }
 ]
