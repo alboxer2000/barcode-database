@@ -272,5 +272,21 @@
     "madeof": "plastic",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "Mario + Rabbids Kingdom Battle",
+    "barcode": "3307216024378",
+    "brand": "Ubisoft",
+    "cobrand": "Nintendo",
+    "description": "Age Rating: 7 (PEGI)",
+    "warning": 1,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
   }
 ]
