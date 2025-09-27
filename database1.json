@@ -112,5 +112,11 @@
     "type": "ean13",
     "item-number": "NF0A89Y5EF11",
     "madeof": null
-  }
+  },
+  {
+    "name": "M TRIN FULL ZIP HOODED TNF"
+    "barcode": 0197805780432,
+    "brand": "The North Face",
+    "cobrand": null,
+    "description": null,
 ]
