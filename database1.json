@@ -90,7 +90,7 @@
     "warning": 0,
     "food": false,
     "nutrients": null,
-    "image-url": "https://barcode-database.vercel.app/img/2.jpg",
+    "image-url": null,
     "type": "ean13",
     "item-number": null,
     "madeof": "paper",
@@ -144,5 +144,21 @@
     "madeof": null,
     "clothing": true,
     "size": null
-  }
+  },
+  {
+    "name": "Buono Minecraft 2025",
+    "barcode": "7179829585852",
+    "brand": "Conad",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "image-url": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "paper",
+    "clothing": false,
+    "size": null
+  },
 ]
