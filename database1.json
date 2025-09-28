@@ -525,7 +525,7 @@
     "nutrients": null,
     "image-url": null,
     "type": "ean13",
-    "item-number": null,
+    "item-number": "BC03",
     "madeof": "plastic",
     "alsomadeof": "liquid",
     "clothing": false,
