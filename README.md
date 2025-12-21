@@ -6,5 +6,14 @@ This is the meaning of the Warning attribute in the JSONs:
 
 0: None
 
-
 1: Choking hazard
+
+2: Flammable 
+
+## Stats
+
+38 items stored
+
+38/1000
+
+![Progress](https://barcode-database.vercel.app/bar.png)
