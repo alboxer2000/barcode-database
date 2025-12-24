@@ -12,8 +12,8 @@ This is the meaning of the Warning attribute in the JSONs:
 
 ## Stats
 
-38 items stored
+39 items stored
 
-**Goal:** 38/1000
+**Goal:** 39/1000
 
 ![Progress](https://barcode-database.vercel.app/bar.png)
