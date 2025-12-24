@@ -591,5 +591,20 @@
     "madeof": "wood",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "307355 CHA BS501 NNY-NS",
+    "barcode": "8054041865397",
+    "brand": "Champions",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": null,
+    "clothing": true,
+    "size": null
   }
 ]
