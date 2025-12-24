@@ -576,5 +576,20 @@
     "madeof": "paper",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "Noris Pencil 120 HB/2",
+    "barcode": "4007817104620",
+    "brand": "Staedtler",
+    "cobrand": null,
+    "description": null,
+    "warning": 0,
+    "food": false,
+    "nutrients": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "wood",
+    "clothing": false,
+    "size": null
   }
 ]
