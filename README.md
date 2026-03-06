@@ -14,6 +14,6 @@ This is the meaning of the Warning attribute in the JSONs:
 
 40 items stored
 
-**Goal:** 40/1000
+**Goal:** 1000
 
-![Progress](https://progress-bar.xyz/1/?title=Progress (less than:)
+![Progress](https://progress-bar.xyz/1/?title=Progress%20less%20than:)
