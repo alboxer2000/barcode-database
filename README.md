@@ -16,4 +16,4 @@ This is the meaning of the Warning attribute in the JSONs:
 
 **Goal:** 40/1000
 
-![Progress](https://barcode-database.vercel.app/bar.png)
+![Progress](https://progress-bar.xyz/0.04?title=Progress)
