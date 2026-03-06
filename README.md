@@ -16,4 +16,4 @@ This is the meaning of the Warning attribute in the JSONs:
 
 **Goal:** 40/1000
 
-![Progress](https://progress-bar.xyz/0.04/?title=Progress)
+![Progress](https://progress-bar.xyz/1/?title=Progress (less than:)
