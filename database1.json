@@ -606,5 +606,20 @@
     "madeof": null,
     "clothing": true,
     "size": null
+  },
+  {
+    "name": "Pixar Movie Moments - Cards",
+    "barcode": "4251906525142",
+    "brand": "Conad",
+    "cobrand": null,
+    "description": null,
+    "warning": 2,
+    "food": false,
+    "nutrients": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "paper",
+    "clothing": false,
+    "size": null
   }
 ]
