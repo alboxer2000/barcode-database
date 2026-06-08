@@ -621,5 +621,35 @@
     "madeof": "paper",
     "clothing": false,
     "size": null
+  },
+  {
+    "name": "Coca-Cola - Original Taste - 1.5L",
+    "barcode": "5000112565348",
+    "brand": "Coca-Cola",
+    "cobrand": null,
+    "description": null,
+    "warning": null,
+    "food": true,
+    "nutrients": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
+  },
+  {
+    "name": "Festa snack",
+    "barcode": "8005662149991",
+    "brand": "Gemme di bontà",
+    "cobrand": null,
+    "description": null,
+    "warning": null,
+    "food": true,
+    "nutrients": null,
+    "type": "ean13",
+    "item-number": null,
+    "madeof": "plastic",
+    "clothing": false,
+    "size": null
   }
 ]
